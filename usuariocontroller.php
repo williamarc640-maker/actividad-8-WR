@@ -1,29 +1,29 @@
 <?php
 require_once 'usuario.php';
-class controlador {
+class Controlador {
     public function listar() {
-        $usuarios = usuario::obtenerTodos();
-        include 'vistas/listar.php';
+        $usuarios = Usuario::obtenerTodo();
+        include 'vistas/lista.php';
     }
     public function detalle($id) {
-        $usuario = usuario::obtenerPorId($id);
+        $usuario = Usuario::obtenerPorId($id);
         include 'vistas/detalle.php';
     }
     public function formulario($id = null) {
-        $usuario = $id ? usuario::obtenerPorId($id) : null;
-        include 'vistas/formulario.php';
+        $usuario = $id ? Usuario::obtenerPorId($id) : null;
+        include 'vistas/formularios.php';
     }
     public function guardar($dato) {
         if (!empty($dato['id'])) {
-            usuario::actualizar($dato['id'], $dato['nombre'], $dato['correo']);
+            Usuario::actualizar($dato['id'], $dato['nombre'], $dato['correo']);
         } else {
-            usuario::insertar($dato['nombre'], $dato['correo']);
+            Usuario::insertar($dato['nombre'], $dato['correo']);
         }
         header("Location: index.php");
         exit();
     }
     public function eliminar($id) {
-        usuario::eliminar($id);
+        Usuario::eliminar($id);
         header("Location: index.php");
         exit();
     }

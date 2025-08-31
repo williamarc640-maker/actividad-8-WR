@@ -31,7 +31,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <?php if ($mensaje): ?>
         <p style="color: red;"><?= $mensaje ?></p>
     <?php endif; ?>
-    <form method="POST" >
+    <form method="post" >
         <label for="usuario">Usuario:</label>
         <input type="text" id="usuario" name="usuario" required><br><br>
         <label for="contraseña">Contraseña:</label>

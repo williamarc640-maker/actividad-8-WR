@@ -6,8 +6,8 @@
     <title><?= $usuario ? 'Editar' : 'Agregar'?>Usuario</title>
 </head>
 <body>
-    <h2><?= $usuario? 'Editar' : 'Agregar'?>Usuario</h2>
-    <form action="index.php?accion=guardar" method="POST">
+    <h2><?= $usuario ? 'Editar' : 'Agregar'?>Usuario</h2>
+    <form action="index.php?action=guardar" method="post">
       <input type="hidden" name="id" value="<?= $usuario->id ?? '' ?>">
         <label >Nombre:</label><br>
     <input type="text" name="nombre" value="<?= $usuario->nombre ?? '' ?>" required><br><br>

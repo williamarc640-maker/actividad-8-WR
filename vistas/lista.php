@@ -7,7 +7,7 @@
 </head>
 <body>
     <h2>Listado de Usuarios</h2>
-    <a href="index.php?accion=formulario">Agregar Usuario</a>
+    <a href="index.php?action=formulario">Agregar Usuario</a>
     <a href="logout.php">Cerrar Sesion</a>
     <br><br>
     <?php
@@ -25,11 +25,9 @@
                     <td><?= htmlspecialchars($u->nombre) ?></td>
                     <td><?= htmlspecialchars($u->correo) ?></td>
                     <td>
-                        <a href="index.php?accion=detalle&id=<?= $u->id ?>">Ver</a>
-                        <a href="index.php?accion=formulario&id=<?= $u->id ?>">Editar</a>
-                        <a href="index.php?accion=eliminar&id=<?= $u->id ?>" 
-                            onclick="return confirm('¿Estás seguro de que deseas eliminar este usuario?');">
-                            Eliminar</a>
+                        <a href="index.php?action=detalle&id=<?= $u->id ?>">Ver</a>
+                        <a href="index.php?action=formulario&id=<?= $u->id ?>">Editar</a>
+                        <a href="index.php?action=eliminar&id=<?= $u->id ?>" onclick="return confirm('¿Estás seguro de que deseas eliminar este usuario?');">Eliminar</a>
                     </td>
                 </tr>
             <?php endforeach; ?>

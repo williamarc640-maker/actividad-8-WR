@@ -10,10 +10,10 @@
     <?php if ($usuario): ?>
         <p><strong>ID:</strong><?= $usuario->id?></p>
         <p><strong>Nombre:</strong><?= $usuario->nombre?></p>
-        <p><strong>Correo:</strong><?= $usuario->email?></p>
+        <p><strong>Correo:</strong><?= $usuario->correo?></p>
     <?php else: ?>
         <p>Usuario no encontrado.</p>
     <?php endif;?>
-    <a href="index,php">Volver a la lista de usuarios</a>
+    <a href="index.php">Volver a la lista de usuarios</a>
 </body>
 </html>

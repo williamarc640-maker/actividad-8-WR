@@ -5,7 +5,7 @@ if (!isset($_SESSION['usuario'])) {
     exit();
 }
 require_once 'usuariocontroller.php';
-$controlador = new controlador();
+$controlador = new Controlador();
 $action = $_GET['action'] ?? '';
 $id = $_GET['id'] ?? null;
 switch ($action) {
@@ -13,7 +13,7 @@ switch ($action) {
         $controlador->formulario($id);
         break;
     case 'guardar':
-        $controlador->guardar($id);
+        $controlador->guardar($_POST);
         break;
     case 'eliminar':
         $controlador->eliminar($id);
