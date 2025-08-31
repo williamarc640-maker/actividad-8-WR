@@ -1,4 +1,5 @@
 <?php
+/* Conexión a la base de datos usando PDO */
 class Database {
     public static function conectar() {
         try {

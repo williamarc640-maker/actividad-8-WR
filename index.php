@@ -1,4 +1,5 @@
 <?php 
+/* Controlador principal que maneja las rutas y acciones */
 session_start();
 if (!isset($_SESSION['usuario'])) {
     header("Location: login.php");

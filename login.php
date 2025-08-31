@@ -1,4 +1,5 @@
 <?php 
+/* Control de acceso y manejo de sesión para el login */
 session_start();
 $mensaje = '';
 if (isset($_SESSION['usuario'])) {
@@ -27,6 +28,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <title>Iniciar Sesion</title>
 </head>
 <body>
+    <!-- Formulario de inicio de sesión -->
     <h2>Iniciar Sesion</h2>
     <?php if ($mensaje): ?>
         <p style="color: red;"><?= $mensaje ?></p>

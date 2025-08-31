@@ -6,11 +6,13 @@
     <title>Detalle de usuario</title>
 </head>
 <body>
+    <!-- Detalle de usuario -->
     <h2>Detalle de usuario</h2>
     <?php if ($usuario): ?>
         <p><strong>ID:</strong><?= $usuario->id?></p>
         <p><strong>Nombre:</strong><?= $usuario->nombre?></p>
         <p><strong>Correo:</strong><?= $usuario->correo?></p>
+    <!-- Si no se encuentra el usuario -->
     <?php else: ?>
         <p>Usuario no encontrado.</p>
     <?php endif;?>

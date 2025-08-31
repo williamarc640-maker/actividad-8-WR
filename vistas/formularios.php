@@ -6,6 +6,7 @@
     <title><?= $usuario ? 'Editar' : 'Agregar'?>Usuario</title>
 </head>
 <body>
+    <!-- Formulario para agregar o editar usuario -->
     <h2><?= $usuario ? 'Editar' : 'Agregar'?>Usuario</h2>
     <form action="index.php?action=guardar" method="post">
       <input type="hidden" name="id" value="<?= $usuario->id ?? '' ?>">
