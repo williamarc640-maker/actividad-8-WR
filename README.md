@@ -7,11 +7,7 @@ o pueden cambiarlo al nombre que quieran en el archivo databese.php en la linea 
 se que puede estar mal escrito este documento o que halla una mejor manera de hacer un crud, pero pues llevo poco tiempo programando y se que probablemente nadie lo lea esto, entonces dejeme sus recomendaciones.
 
 ## configuracion de la tabla
-la tabla va haci:
-nombre|tipo        |cotejamiento|atributos|nulo|predeterminado|comentarios|extra   
-id    |INT(11)     |            |         |no  |ninguno       |           |AUTO_INCREMENT
-nombre|VARCHAR(255)|            |         |no  |ninguno       |           |
-correo|VARCHAR(255)|            |         |no  |ninguno       |           |
+<img width="937" height="144" alt="image" src="https://github.com/user-attachments/assets/50d3d68f-4901-4594-87cc-b37a507a07ad" />
 
 En cotejamiento pongan el que quieran
 
