@@ -3,11 +3,9 @@
 para que se conecte a una tabla de phpmyadmin la tabla debe llammarse mvc_crud,
 o pueden cambiarlo al nombre que quieran en el archivo databese.php en la linea 6.
 
-## aclaracion
-se que puede estar mal escrito este documento o que halla una mejor manera de hacer un crud, pero pues llevo poco tiempo programando y se que probablemente nadie lo lea esto, entonces dejeme sus recomendaciones.
-
 ## configuracion de la tabla
-<img width="937" height="144" alt="image" src="https://github.com/user-attachments/assets/50d3d68f-4901-4594-87cc-b37a507a07ad" />
+<img width="830" height="99" alt="image" src="https://github.com/user-attachments/assets/8a460f6c-7e8e-4508-9b1a-b144447a0e0f" />
+
 
 En cotejamiento pongan el que quieran
 
